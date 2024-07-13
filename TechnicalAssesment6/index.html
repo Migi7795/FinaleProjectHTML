@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migi's Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+        <h1>Migi's Cafe</h1>
+    </header>
+    <main>
+        <section id="home" class="section active">
+            <h2>Welcome to Migi's Cafe</h2>
+            <p>Where you can taste coffee around the world!</p>
+        </section>
+        <section id="shop" class="section">
+            <h2>Shop</h2>
+            <div class="products">
+                <div class="product" data-price="3.50">
+                    <img id src="https://blogstudio.s3.theshoppad.net/coffeeheroau/ec178d83e5f597b162cda1e60cb64194.jpg" alt="Espresso" alt- Centered Image width="300" height="250">
+                    <span>Espresso - $3.50</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-price="4.00">
+                    <img id src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR5PY5GLtZXM5wFybH2Fosb0DE3jyrjQauoQ&s" alt="Latte" alt- Centered Image width="300" height="250">
+                    <span>Latte - $4.00</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-price="4.50">
+                    <img id src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Cappuccino_at_Sightglass_Coffee.jpg" alt="Cappuccino" alt- Centered Image width="300" height="250">
+                    <span>Cappuccino - $4.50</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section id="cart" class="section">
+            <h2>Cart</h2>
+            <ul class="cart-items">
+                <!-- Cart items will be appended here -->
+            </ul>
+            <p>Total: $<span class="total-price">0.00</span></p>
+            <button class="checkout">Checkout</button>
+        </section>
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Migi's Cafe, established in January 14, 2020. The besst place to buy coffee, enjoy and enjoy a freshly made cup of coffee
+                we also have other branches around Bulacan. Malolos, Bocaue, Balagtas. you can call 09561234568</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
