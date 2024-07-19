@@ -4,12 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.section');
     const navLinks = document.querySelectorAll('.nav-menu ul li a');
 
-    // Toggle menu for mobile view
     menuToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
     });
 
-    // Section navigation
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -25,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Cart functionality
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
     const cartItemsContainer = document.querySelector('.cart-items');
     const totalPriceElement = document.querySelector('.total-price');
